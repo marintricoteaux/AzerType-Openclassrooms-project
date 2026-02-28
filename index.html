@@ -5,11 +5,27 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="Site pour s'entrainer à la dactylographie"/>
         <meta name="author" content="Marin Tricoteaux"/>
-        <script src="scripts/config.js"></script>
-        <script src="scripts/script.js"></script>
-        <script src="scripts/main.js"></script>
+        <script src="scripts/config.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/main.js" defer></script>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <header>
+            <h1>AzerType - Test de dactylographie</h1>
+        </header>
+        <main>
+            <section id="zoneChoixGameMode">
+                <p>Veuillez choisir votre mode de jeu :</p>
+                <label for="mots">Jouer avec des mots</label><input type="radio" name="ChoixGameMode" value="mots" id="ChoixGameMode"/>
+                <label for="phrases">Jouer avec des phrases</label><input type="radio" name="ChoixGameMode" value="phrases" id="ChoixGameMode"/>
+            </section>
+            <section>
+                <label for="proposition">Tapez : </label><input type="text" name="proposition" id="proposition"/>
+            </section>
+        </main>
+        <footer>
+            <p>@Copyrights : Marin Tricoteaux</p>
+        </footer>
     </body>
 </html>
